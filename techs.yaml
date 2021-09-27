@@ -1,0 +1,33 @@
+techs:
+    ccgt:
+        essentials:
+            name: 'ccgt'
+            color: '#E37A71'
+            parent: supply
+            carrier_out: power
+        constraints:
+            resource: inf
+            energy_eff: 0.5
+            energy_cap_max: 40e3
+            energy_cap_max_systemwide: 1e6
+            energy_ramping: 0.8
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 750
+                om_con: 0.02
+     
+    battery:
+        essentials:
+            name: 'Battery Storage'
+            color: '#3B13A5'
+            parent: storage
+            carrier: power
+        constraints:
+            energy_cap_max: 1e3
+            storage_cap_max: inf
+            energy_cap_per_storage_cap_max: 4
+            energy_eff: 0.95
+            
+            
