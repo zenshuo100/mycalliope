@@ -30,4 +30,6 @@ techs:
             energy_cap_per_storage_cap_max: 4
             energy_eff: 0.95
             
+            storage_loss: 0.05
+            
             
